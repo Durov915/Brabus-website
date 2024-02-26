@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .rangerover {
+    height: 75vh;   
+    background-image: url(https://www.brabus.com/_Resources/Persistent/d/5/a/b/d5ab44fe050dc2307535f289194c95901f737921/BRABUS_Rocket_1000_M-AMG%20GT%2063_HQ%20%2837%20von%2040%29.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .text-range {
+    position: absolute;
+    color: white;
+    font-size: 2.5rem; 
+    font-weight: 500;
+    right: 5%;
+    top: 30%;
+    letter-spacing: 1.2px;
+  }
+  
+  .range-button button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 190px;
+    font-size: 1rem; 
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: 0.5s; 
+    background-color: rgba(255, 255, 255, 0.427);
+  }
+  button:hover{
+    
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    font-weight: 900;
+    font-size: 3.5vh;
+  }
+  
+  .supercar {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .three-cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+  }
+  
+  .fir-car {
+    flex: 0 1 calc(33.333% - 40px); 
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .fir-car img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .stich img, .man-repairing-car img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .repair {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .repair .head {
+    font-size: 2rem; 
+  }
+  
+  .repair .para {
+    font-size: 1rem; 
+  }
+  
+  .lastg {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .conta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .conta p {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem; 
+    margin-bottom: 20px;
+  }
+  
+  .conta button {
+    font-size: 1rem; 
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .text-range {
+      font-size: 2rem; 
+      top: 20%;
+    }
+  
+    .range-button button {
+      bottom: 5%;
+    }
+  
+    .fir-car {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .text-range {
+      font-size: 1.5rem; 
+      top: 15%;
+    }
+  
+    .range-button button {
+      bottom: 2%;
+    }
+  
+    .fir-car {
+      flex-basis: calc(100% - 20px);
+    }
+  }
+  
